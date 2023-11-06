@@ -1,0 +1,54 @@
+video {
+  height: initial;
+  aspect-ratio: initial;
+}
+
+img {
+  height: -webkit-fill-available;
+}
+
+img,
+video {
+  width: -webkit-fill-available;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.media_item-wrapper {
+  position: absolute;
+  min-height: 100px;
+  max-height: calc(100vh - 84px);
+  width: 300px;
+  max-width: calc(100vw - 10%);
+  resize: horizontal;
+  padding: 0.125rem;
+  overflow: hidden;
+  cursor: grab;
+  border-radius: 0.5rem;
+}
+
+.media-title {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: rgb(163, 166, 170);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  opacity: 0.5;
+  background-color: #dfe2e7;
+
+  transition: all 0.2s ease-out;
+}
+
+.close-icon:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}

@@ -2,6 +2,8 @@ import { memo } from 'react';
 
 import closeIcon from '../../assets/close_icon.png';
 
+import './media.css';
+
 interface MediaProps {
   url: string;
   mediaType: string;
