@@ -1,0 +1,59 @@
+.modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1100;
+  background-color: rgb(169, 174, 180, 0.5);
+}
+
+dialog {
+  display: block;
+  width: 25rem;
+  margin: auto;
+  border-radius: 1.25rem;
+  border: 1px solid rgb(79, 77, 77);
+  padding: 1rem;
+  background-color: rgb(205, 209, 213);
+
+  -webkit-box-shadow: -1px 2px 7px 3px rgba(0, 0, 0, 0.41);
+  box-shadow: -1px 2px 7px 3px rgba(0, 0, 0, 0.41);
+}
+
+dialog p {
+  opacity: 0.7;
+}
+
+.dialog-title {
+  font-size: larger;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.dialog-controls {
+  margin-top: 1.25rem;
+  display: flex;
+  float: right;
+  gap: 1.25rem;
+}
+
+.cancel {
+  border-color: #abb1ba;
+  background-color: #bfc4cb;
+}
+
+.confirm {
+  background-color: #e8ebef;
+  border-color: #abb1ba;
+  color: rgb(132, 136, 137);
+}
+
+.confirm:hover,
+.cancel:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,135 @@
+input {
+  transition: all 0.5s ease;
+}
+
+input:focus {
+  background-color: white;
+}
+
+input::placeholder {
+  color: aliceblue;
+}
+
+button {
+  font-weight: 600;
+  color: aliceblue;
+  opacity: 0.9;
+
+  transition: all 0.5s ease;
+}
+
+video {
+  height: initial;
+  aspect-ratio: initial;
+}
+
+img {
+  height: -webkit-fill-available;
+}
+
+img,
+video {
+  width: -webkit-fill-available;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+input,
+button {
+  border: 2px solid rgb(210, 213, 217);
+  background: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+button:hover,
+button:disabled {
+  opacity: 0.8;
+  color: rgb(132, 136, 137);
+  border-color: rgb(132, 136, 137);
+}
+
+.page-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5%;
+}
+
+.header-container {
+  width: 100%;
+  max-height: 200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.controls-panel {
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.views-metrics {
+  z-index: 800;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 40%;
+  height: 9rem;
+  padding: 0.125rem;
+  border: 2px solid #d6dde2;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.media-container {
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+.media_item-wrapper {
+  position: absolute;
+  min-height: 100px;
+  max-height: calc(100vh - 84px);
+  width: 300px;
+  max-width: calc(100vw - 10%);
+  resize: horizontal;
+  padding: 0.125rem;
+  overflow: hidden;
+  cursor: grab;
+  border-radius: 0.5rem;
+}
+
+/* .media_item-wrapper:active {
+  z-index: 1000;
+} */
+
+.media-title {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: rgb(163, 166, 170);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  opacity: 0.5;
+  background-color: #dfe2e7;
+
+  transition: all 0.2s ease-out;
+}
+
+.close-icon:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
